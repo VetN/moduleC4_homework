@@ -1,0 +1,102 @@
+
+@font-face {
+	src: url('fonts/Prata-Regular.ttf') format('truetype');
+	font-family: 'Prata';
+	font-weight: 400;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.allpage {
+    background-color: #d9d9d9;
+	font-family: 'Prata';
+	font-size: 30px;
+	min-height: 100vh;
+    margin: 0 20px;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+.left, .right {
+    align-self: center;
+    margin: auto;
+}
+.title {
+    display: flex;
+    justify-self: start;
+    flex-wrap: wrap;
+}
+.title_1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.container {
+    position: relative;
+}
+.header {
+    text-align: center;
+    color:rgb(72, 71, 71);
+    margin: 0 20px;
+}
+.name {
+    text-align: center;
+    color:rgb(72, 71, 71);
+    margin: 0 auto;
+    font-size: 40px;
+
+
+}
+.friend {
+    display: none;
+    text-align: center;
+}
+.alldot {
+    text-align: center;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #999999;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    }
+    .active, .dot:hover {
+    background-color: rgba(91, 55, 55, 0.8);
+    }
+.pointer {
+    display: flex;
+    justify-content: space-between;
+
+    }
+.prev, .next {
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    padding: 8px;
+    margin: 0 20px;
+    color: #999999;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    }
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+   
+.prev:hover, .next:hover {
+    background-color: rgba(91, 55, 55, 0.8);
+    border-radius: 50%;
+    }

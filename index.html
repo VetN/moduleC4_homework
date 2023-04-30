@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Слайдер- фотогалерия">
+    <title>My dog friends are</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class ="allpage">
+
+    <section class="main">
+        <div class="left">
+             <img src="image/dog.png" alt="photo dog" widht="200" height="500">
+        </div>
+            
+        <div class="right">
+            <div class = "title">
+                <div class="title_1">
+                    <img src="image/heart.png" alt="photo heart" width="50" height="50">
+                    <h1 class = "header">OUR</h1>
+                </div>
+                <div class="title_1">
+                    <h1 class = "header">FRIENDS</h1>  
+                    <img src="image/heart.png" alt="photo heart" width="50" height="50">
+                </div>
+            </div>
+            <div class="'container">
+                <div class="slider_container">
+                    <div class="friend">
+                        <img src="image/dog_1.png" alt="photo dog" widht="250" height="250">
+                        <h2 class="name">Fluffy</h2>
+                    </div>
+                    <div class="friend">
+                        <img src="image/dog_2.png" alt="photo dog" widht="250" height="250">
+                        <h2 class="name">Kitty</h2>
+                    </div>
+                    <div class="friend">
+                        <img src="image/dog_3.png" alt="photo dog" widht="250" height="250">
+                        <h2 class="name">Tom</h2>
+                    </div>
+                    <div class="friend">
+                        <img src="image/dog_4.png" alt="photo dog" widht="250" height="250">
+                        <h2 class="name">Snuppy</h2>
+                    </div>
+                    <div class="friend">
+                        <img src="image/dog_5.png" alt="photo dog" widht="250" height="250">
+                        <h2 class="name">Snow</h2>
+                    </div>
+                    <div class="pointer">
+                    <a class="prev" onclick="changePhoto(-1)">&#10094;</a>
+                    <a class="next" onclick="changePhoto(1)">&#10095;</a>
+                    </div>
+                </div>
+                <br>
+                <div class="alldot">
+                    <span class="dot" onclick="clickDot(1)"></span> 
+                    <span class="dot" onclick="clickDot(2)"></span> 
+                    <span class="dot" onclick="clickDot(3)"></span> 
+                    <span class="dot" onclick="clickDot(4)"></span> 
+                    <span class="dot" onclick="clickDot(5)"></span> 
+                  </div>
+            </div> 
+           
+         </div>
+    </section>
+    <script src="js.js">    
+    </script>
+</body>
+</html>
