@@ -1,7 +1,19 @@
-'use strict'
+// создаю начальный счетчик и вкл функцию
 let slideInd = 1;
+photoSlides(slideInd);
 
-
+// функеция кнопки отмотки назад
+function prevPhoto(n) {
+    photoSlides(slideInd -= 1);
+}
+// функция кнопки отмотки вперед
+function nextPhoto(n) {
+    photoSlides(slideInd += 1);
+}
+// функция индикатора перемонти
+function clickDot(n) {
+    photoSlides(slideInd = n);
+}
 
 function photoSlides(n) {
     let i;
@@ -17,19 +29,13 @@ function photoSlides(n) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace('active', '');
+        dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideInd-1].style.display = 'block';
-    dots[slideInd-1].className += 'active';
-
+    slides[slideInd - 1].style.display = "block";
+    dots[slideInd - 1].className += " active";
 }
 
-photoSlides(slideInd);
 
-function clickDot(n) {
-    photoSlides(slideInd = n);
-}
 
-function changePhoto(n) {
-    photoSlides(slideInd += n);
-}
+
+
